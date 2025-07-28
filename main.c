@@ -12,7 +12,7 @@
 #define CHANNEL_LEVEL_LOW  0x00
 #define CHANNEL_LEVEL_HIGH 0x01
 
-#define PORT_A	0
+#define PORT_A	0 //Reserved in Atmega 328p
 #define PORT_B	1
 #define PORT_C	2
 #define PORT_D	3
@@ -26,7 +26,7 @@
 	typedef uint8_t RegType;
 	
 	#define GPIO_NUMBERS 4
-	#define ADDR_PORT_A	(RegType*)0x20
+	#define ADDR_PORT_A	(RegType*)0x20 //Reserved in Atmega 328p
 	#define ADDR_PORT_B	(RegType*)0x23
 	#define ADDR_PORT_C	(RegType*)0x26
 	#define ADDR_PORT_D	(RegType*)0x29
